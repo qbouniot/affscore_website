@@ -57,27 +57,27 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://qbouniot.github.io/" target="_blank">Quentin Bouniot</a><sup>*</sup>,</span>
+                <a href="https://qbouniot.github.io/" target="_blank">Quentin Bouniot</a><sup>*,1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://ievred.github.io/" target="_blank">Ievgen Redko</a><sup>*</sup>,</span>
+                  <a href="https://ievred.github.io/" target="_blank">Ievgen Redko</a><sup>*,2</sup>,</span>
                   <span class="author-block">
-                    <a href="https://sites.google.com/view/antonmallasto/home" target="_blank">Anton Mallasto</a>,</span>
+                    <a href="https://sites.google.com/view/antonmallasto/home" target="_blank">Anton Mallasto</a><sup>3</sup>,</span>
                   <span class="author-block">
-                    <a href="https://laclauc.github.io/" target="_blank">Charlotte Laclau</a>,</span>
+                    <a href="https://laclauc.github.io/" target="_blank">Charlotte Laclau</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a target="_blank"> Oliver Struckmeier</a>,</span>
+                    <a target="_blank"> Oliver Struckmeier</a><sup>4</sup>,</span>
                   <span class="author-block">
-                    <a target="_blank"> Karol Arndt</a>,</span>
+                    <a target="_blank"> Karol Arndt</a><sup>4</sup>,</span>
                   <span class="author-block">
-                    <a href="https://markusheinonen.github.io/" target="_blank">Markus Heinonen</a>,</span>
+                    <a href="https://markusheinonen.github.io/" target="_blank">Markus Heinonen</a><sup>4</sup>,</span>
                   <span class="author-block">
-                    <a href="https://www.aalto.fi/en/people/ville-kyrki" target="_blank">Ville Kyrki</a>,</span>
+                    <a href="https://www.aalto.fi/en/people/ville-kyrki" target="_blank">Ville Kyrki</a><sup>4</sup>,</span>
                   <span class="author-block">
-                    <a href="https://kaski-lab.com/" target="_blank">Samuel Kaski</a>,</span>
+                    <a href="https://kaski-lab.com/" target="_blank">Samuel Kaski</a><sup>4,5</sup>,</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Télécom Paris, Institut Polytechnique de Paris, &emsp; Paris Noah’s Ark Lab, &emsp; Smartly.io, &emsp; Aalto University, &emsp; University of Manchester<br>CVPR 2025</span>
+                    <span class="author-block"><sup>1</sup>Télécom Paris, Institut Polytechnique de Paris, &emsp; <sup>2</sup>Paris Noah’s Ark Lab, &emsp; <sup>3</sup>Smartly.io, &emsp; <sup>4</sup>Aalto University, &emsp; <sup>5</sup>University of Manchester<br>CVPR 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -150,6 +150,25 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Affinity score: principle tool for measuring non-linearity</h2>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/affscore_def.png" alt="Affinity Score"/>
+        <h2 class="subtitle has-text-centered">
+          Affinity Score
+        </h2>
+      </div>
+      <p>
+        The affinity score measures how much the output of a function differs from being a positive semi-definite (PSD) affine transformation of the input.
+      </p>
+</div>
+</div>
+</section>
+
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -158,30 +177,107 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/poly_example.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Simple polynomial functions
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/figure_aff_score.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Popular activation functions
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Non-linearity signature of a DNN</h2>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/non_linearity_signature.png" alt="Non-linearity Signature"/>
+        <h2 class="subtitle has-text-centered">
+          Non-linearity signature
+        </h2>
+      </div>
+      <p>
+        The Non-linearity signature of a DNN is the vector of affinity scores for each activation functions across all layers of the network, computed for a given input distribution.
+      </p>
+</div>
+</div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/throughout_dnns.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Walking through DNNs’ history
+        </h2>
+      </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/early_convnets.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Early Convolutional Neural Networks
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/deep_networks.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Deeper Networks
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/post-vit.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Post-ViT Era
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Applications</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/residual_connections.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Residual connections introduce a clear trend toward a bi-modal distribution of affinity
+scores.
+        </h2>
+      </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/clustering_architectures.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Clustering of architectures with pairwise DTW distances between non-linearity signatures.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/correlations.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Unique measure: no consistent correlation with other measures.
       </h2>
     </div>
   </div>
@@ -191,35 +287,13 @@
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-<!--       <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths"> -->
-          
-<!--           <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-<!--             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/poster_cvpr.pdf" width="100%" height="550">
           </iframe>
         
       </div>
